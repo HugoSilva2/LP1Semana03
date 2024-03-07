@@ -7,16 +7,16 @@ namespace RightSize
     {
         static void Main(string[] args)
         {
-            foreach ( string s1 in args)
+            foreach (string s in args)
             {
-                if (s1.Length > 6)
+                if (s.Length > 6)
                 {
                     break;
                 }
 
-                if (s1.Length > 3)
+                if (s.Length > 3)
                 {
-                    Console.WriteLine(s1);
+                    Console.WriteLine(s);
                 }
             }
         }
