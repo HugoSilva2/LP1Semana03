@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Intrinsics.Arm;
 
 namespace RightSize
 {
@@ -6,7 +7,18 @@ namespace RightSize
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            foreach ( string s1 in args)
+            {
+                if (s1.Length > 6)
+                {
+                    break;
+                }
+
+                if (s1.Length > 3)
+                {
+                    Console.WriteLine(s1);
+                }
+            }
         }
     }
 }
