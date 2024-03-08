@@ -2,17 +2,24 @@
 
 namespace PlayerAchievements
 {
+//enumeration flag(DefeatOptionalBoss, FindHiddenLevel, FinishGame)
+[Flags]
+public enum Achievements
+{
+    DefeatOptionalBoss = 0,
+    FindHiddenLevel = 1,
+    FinishGame = 2
+}
+
     class Program
     {
         static void Main(string[] args)
         {
             //Ask user number of players
             Console.Write("Number of Players: ");
-            
+
             //Save input on a variable n
             string n = Console.ReadLine();
-
-            //enumeration flag(DefeatOptionalBoss, FindHiddenLevel, FinishGame)
 
             //Array with n size
 
